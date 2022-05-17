@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lagoona</title>
-  <link rel="stylesheet" href="css/medialagona.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/medialagona.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
   <body>
     <div class="container">
@@ -25,6 +26,7 @@
     </div>
 
     <div class="header-bottom">
+      <div class="hamburger"></div>
     <ul class="header-menu">
       <a class="header__menu__link" href=""><li>О нас</li></a>
       <a class="header__menu__link" href=""><li>Услуги</li></a>
@@ -39,8 +41,27 @@
     </div>
     </div>
     </header>
+<!-- 
+    <div class="text">xxxx</div>
 
-    <section style="display: none;" class="spec">
+       <button class="button">aaaa</button>
+
+      <script>
+         $('.button').click(function(){
+           $('.text').addClass('hidden');
+         })
+
+         
+
+      </script>
+    
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>    -->
+
+    <section class="spec">
       <h2 class="spec__title">Спецпредложения</h2>
        <div class="block-wrapper">
        <div class="inner-block inner-block__left">
@@ -436,5 +457,15 @@
   </div>
   </footer>
   </div>
+
+  <script>
+  
+$('.hamburger').click(function(){
+  $('.header-menu').slideToggle();
+})
+  
+
+  </script>
+
   </body>
   </html>

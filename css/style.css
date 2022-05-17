@@ -73,13 +73,28 @@ h2 {
   margin-bottom: 15px;
   list-style: none;
   border-right: none; 
+  text-align: center;
 }
+
+/* HAMBURGER */
+ 
+.hamburger {
+  margin-bottom: 10px;
+  background: url(../img/menu/hamburger.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: #f1f1f1;
+}
+
+/* HAMBURGER */
 
 .header__menu__link {
   text-decoration: none;
 }
 
 .header-menu li {
+  white-space: nowrap;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -118,6 +133,7 @@ a.button-right:hover {
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  padding-top: 15px;
   height: auto;
   border-radius: 10px;
   background-color: #fff;
@@ -140,7 +156,7 @@ a.button-right:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+   width: 100%; 
 }
 
 .top-left a {
@@ -150,6 +166,10 @@ a.button-right:hover {
   line-height: 20px;
   color: #666666;
   text-decoration: none;
+}
+
+.top-right {
+  white-space: nowrap;
 }
 
 .top-right a {
@@ -177,10 +197,11 @@ a.button-right:hover {
 .block-wrapper {
   display: flex;
   width: 100%;
+  flex-direction: column;
 }
 
 .inner-block {
-  width: 50%;
+  width: 100%;
 }
 
 .inner-block__left .spec__title {
@@ -189,7 +210,7 @@ a.button-right:hover {
   font-family: "Muller";
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 40px;
 
   color: #ffffff;
@@ -290,7 +311,7 @@ margin-bottom: 25px;
   font-family: "Muller";
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 28px;
   line-height: 40px;
   /* identical to box height */
 

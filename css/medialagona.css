@@ -4,13 +4,14 @@
 @media screen and (min-width: 360px) {
     
 
-   .top-left {
-       flex-direction: row;
-   }
+    .top-left {
+        flex-direction: row;
+        
+    }
 
-   .top-left a {
-       margin: 0 40px;
-   }
+    .top-left a {
+        margin: 0 40px;
+    }
 
 
     .header-bottom {
@@ -30,8 +31,10 @@
 }
 
 .header-menu {
-
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    margin-bottom: 0;
     border-right: 1px solid #e1e1e1;
 }
 
@@ -68,6 +71,20 @@ a.button-right:last-child {
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+.spec__title {
+    font-size: 40px;
+}
+
+.block-wrapper {
+    flex-direction: row;
+}
+
+.inner-block {
+    width: 50%;
+}
+
+
 
 }
 
